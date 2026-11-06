@@ -1,0 +1,32 @@
+{
+  "meeting_number": "018",
+  "meeting_description": "ASML W77 Planon Weekly #018",
+  "meeting_location": "Microsoft Teams — Virtual",
+  "meeting_date": "09/08/26",
+  "meeting_time": "3:00 PM ET",
+  "date_issued": "09/09/26",
+  "issued_by": "Noah Grubler, CSL Consulting",
+  "next_meeting": "09/15/26",
+  "next_location": "Microsoft Teams — Virtual",
+  "next_time": "3:00 PM ET",
+  "callin_info": "Join from Calendar Invite via Microsoft Teams",
+  "attendees": [
+    {"name": "Steven Schryba — CSL Consulting (Owner's Representative)", "attended": true},
+    {"name": "Noah Grubler — CSL Consulting (APM)", "attended": true},
+    {"name": "Bill Gannon — ASML CRE (Program Lead)", "attended": true},
+    {"name": "Thomas Dube — ASML (Planon Data)", "attended": true},
+    {"name": "Eric Hubert — CSL Consulting (Project Director)", "attended": false}
+  ],
+  "action_items": [
+    {
+      "item_id": "018-001",
+      "title": "QR Tagging Sequenced After Code Correction",
+      "description": "QR tagging will follow asset-record and functional-code correction and ride the incoming maintenance provider's PM cycles.",
+      "responsible": "T. Dube / S. Schryba",
+      "open_date": "09/08/26",
+      "due_date": "09/11/26",
+      "status": "Open",
+      "log": "09/08/26 — Thomas Dube stated on the call that record and code correction precede tagging and that tagging is not in a rush, superseding item 017-003. Steven Schryba confirmed the CSL gate that no label prints before the code is confirmed stable in writing. The maintenance provider is to be named by 09/11/26. Written confirmation of the structure remains requested."
+    }
+  ]
+}

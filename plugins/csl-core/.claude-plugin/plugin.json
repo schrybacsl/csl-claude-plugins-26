@@ -1,0 +1,19 @@
+{
+  "name": "csl-core",
+  "displayName": "CSL Core",
+  "version": "2.0.0",
+  "description": "CSL operating rules, AI Policy guardrails, brand, document control, people directory, client communications, executive memos, and meeting records. Required by every other CSL plugin. For all CSL employees.",
+  "author": {
+    "name": "CSL Consulting LLC"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "csl",
+    "ai-policy",
+    "brand",
+    "document-control",
+    "communications",
+    "minutes",
+    "memo"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "csl-work-agent/brand-tokens",
+  "version": "1.0",
+  "source": "CSL Brand Guidelines Summer 2023 + csl-work-agent package conventions",
+  "color": {
+    "primary": {
+      "csl-red": { "hex": "#BF311A", "rgb": [191, 49, 26], "use": "logo and hairline accents only; never a fill" },
+      "black": { "hex": "#000000", "rgb": [0, 0, 0] },
+      "white": { "hex": "#FFFFFF", "rgb": [255, 255, 255] }
+    },
+    "legacy_forbidden": ["#C8102E"],
+    "accent": {
+      "navy": { "hex": "#0A3173", "rgb": [10, 49, 115] },
+      "teal-dark": { "hex": "#056873", "rgb": [5, 104, 115] },
+      "teal": { "hex": "#1AA8BF", "rgb": [26, 168, 191] },
+      "olive": { "hex": "#BFAD2E", "rgb": [191, 173, 46] }
+    },
+    "tint": {
+      "navy": { "60": "#6C83AB", "30": "#B6C1D5", "12": "#E2E6EE" },
+      "teal-dark": { "60": "#69A4AB", "30": "#B4D2D5", "12": "#E1EDEE" },
+      "teal": { "60": "#76CBD9", "30": "#BAE5EC", "12": "#E4F5F7" },
+      "olive": { "60": "#D9CE82", "30": "#ECE6C0", "12": "#F7F5E6" }
+    },
+    "neutral": {
+      "ink": "#1F2933",
+      "slate": "#52606D",
+      "grey": "#9AA5B1",
+      "mist": "#E4E7EB",
+      "paper": "#F5F7FA"
+    },
+    "tier": {
+      "RED": { "hex": "#C62828", "text": "#FFFFFF" },
+      "AMBER": { "hex": "#E09B1A", "text": "#1F2933" },
+      "GREEN": { "hex": "#2E7D32", "text": "#FFFFFF" },
+      "BLUE": { "hex": "#0A3173", "text": "#FFFFFF" },
+      "GREY": { "hex": "#9AA5B1", "text": "#1F2933" }
+    },
+    "chart_series": ["#0A3173", "#056873", "#1AA8BF", "#BFAD2E", "#6C83AB", "#69A4AB", "#76CBD9", "#D9CE82"]
+  },
+  "typography": {
+    "print_face": "Avenir Medium",
+    "office_face": "Avenir Next LT Pro",
+    "fallback_face": "Arial Narrow",
+    "mono_face": "Consolas",
+    "header_style": "bold",
+    "subheader_style": "italic",
+    "scale_pdf_pt": { "title": 22, "h1": 14, "h2": 11, "body": 10, "table": 8.5, "caption": 7.5 },
+    "scale_deck_pt": { "title": 32, "section": 24, "body": 16, "table": 12, "footnote": 10 },
+    "min_body_pt": 9,
+    "min_table_pt": 8,
+    "line_height": { "office": 1.15, "html": 1.35 }
+  },
+  "logo": {
+    "lockup": "red box with white C|S|L, CONSULTING in black beneath",
+    "clear_space": "height of the red box on all sides",
+    "min_width_in": 0.9,
+    "min_width_px": 120,
+    "placement": {
+      "report_cover": "top-left on white",
+      "running_header": "top-left, 0.6in wide",
+      "deck_content": "bottom-left, 0.9in",
+      "minutes_letters": "centered top of page 1"
+    }
+  },
+  "naming": {
+    "first_reference": "CSL Consulting",
+    "subsequent": "CSL",
+    "legal": "CSL Consulting, LLC",
+    "forbidden": ["CSL LLC", "CSL Consulting LLC", "C.S.L."],
+    "hq": "152 Middlesex Turnpike, Burlington, MA 01803"
+  },
+  "page": {
+    "pdf_report": { "size": "Letter", "orientation": "portrait", "margin_in": 0.75 },
+    "minutes": { "size": "Letter", "orientation": "portrait", "margin_in": { "top": 0.65, "bottom": 0.6, "left": 0.75, "right": 0.75 } },
+    "deck": { "aspect": "16:9", "width_in": 13.333, "height_in": 7.5 },
+    "tabloid_exec": { "size": "Tabloid", "orientation": "landscape", "pts": [1224, 792] }
+  }
+}

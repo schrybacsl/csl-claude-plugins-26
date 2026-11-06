@@ -1,0 +1,62 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "csl-consulting",
+  "owner": {
+    "name": "CSL Consulting LLC IT"
+  },
+  "description": "CSL Consulting's internal Claude plugins for owner's project management, business development, and firm-wide standards. Internal use only.",
+  "version": "2.0.0",
+  "plugins": [
+    {
+      "name": "csl-core",
+      "source": "./plugins/csl-core",
+      "description": "CSL operating rules, AI Policy guardrails, brand, document control, people directory, client communications, executive memos, and meeting records. Required by every other CSL plugin. For all CSL employees.",
+      "category": "csl",
+      "tags": [
+        "csl",
+        "ai-policy",
+        "brand",
+        "document-control",
+        "communications",
+        "minutes",
+        "memo"
+      ]
+    },
+    {
+      "name": "csl-project-delivery",
+      "source": "./plugins/csl-project-delivery",
+      "description": "Owner's-rep and OPM delivery skills: schedule and risk tiers, cost and change control, design and construction oversight, permits and shutdowns, asset data and CMMS, technical documents, weekly reporting, dashboards and KPIs, and the data pipeline. For Project Management.",
+      "category": "csl",
+      "tags": [
+        "owners-rep",
+        "opm",
+        "construction",
+        "schedule",
+        "risk",
+        "cost-control",
+        "reporting",
+        "cmms"
+      ],
+      "dependencies": [
+        "csl-core"
+      ]
+    },
+    {
+      "name": "csl-business-development",
+      "source": "./plugins/csl-business-development",
+      "description": "Pursuits and qualifications: go/no-go, SOQ and RFP responses, compliance matrices, LOE proposals, capability statements, and the CSL project portfolio. For Marketing, BD, and pursuit teams.",
+      "category": "csl",
+      "tags": [
+        "business-development",
+        "proposals",
+        "soq",
+        "rfq",
+        "qualifications",
+        "marketing"
+      ],
+      "dependencies": [
+        "csl-core"
+      ]
+    }
+  ]
+}

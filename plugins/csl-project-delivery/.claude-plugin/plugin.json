@@ -1,0 +1,20 @@
+{
+  "name": "csl-project-delivery",
+  "displayName": "CSL Project Delivery",
+  "version": "2.0.0",
+  "description": "Owner's-rep and OPM delivery skills: schedule and risk tiers, cost and change control, design and construction oversight, permits and shutdowns, asset data and CMMS, technical documents, weekly reporting, dashboards and KPIs, and the data pipeline. For Project Management.",
+  "author": {
+    "name": "CSL Consulting LLC"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "owners-rep",
+    "opm",
+    "construction",
+    "schedule",
+    "risk",
+    "cost-control",
+    "reporting",
+    "cmms"
+  ]
+}

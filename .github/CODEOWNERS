@@ -1,0 +1,8 @@
+# Replace each [PLACEHOLDER] with a GitHub team once IT assigns them (see GOVERNANCE.md).
+*                                                   @[PLACEHOLDER]/csl-it
+/plugins/csl-core/skills/csl-ai-policy/             @[PLACEHOLDER]/csl-it @[PLACEHOLDER]/ai-policy-owner
+/plugins/csl-core/skills/csl-operating-rules/       @[PLACEHOLDER]/csl-it @[PLACEHOLDER]/pm-lead
+/plugins/csl-core/skills/csl-brand/                 @[PLACEHOLDER]/marketing
+/plugins/csl-core/skills/csl-people/                @[PLACEHOLDER]/marketing
+/plugins/csl-project-delivery/                      @[PLACEHOLDER]/pm-lead
+/plugins/csl-business-development/                  @[PLACEHOLDER]/marketing
