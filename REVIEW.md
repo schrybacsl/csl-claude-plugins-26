@@ -38,3 +38,21 @@ The method content is strong and worth keeping intact: the tier rules, the pull-
 - `python3 scripts/validate.py`: 0 errors, 0 warnings.
 - `claude plugin validate` (Claude Code 2.1.318): marketplace and all three plugins pass.
 - All Python compiles; `chart_library.py` resolves `csl-brand` tokens across the plugin boundary.
+
+## Review of marketplace 2.0.0
+
+Reviewed 11/06/26. Scope: repository documentation and governance, marketplace and plugin manifests, CI, validator, and the data-pipeline scripts. This records findings only; no implementation fixes were made.
+
+| # | Finding | Effect | Severity | Recommendation |
+|---|---|---|---|---|
+| 15 | `smartsheet_pull.py:158` sets the REST `Authorization` header to the literal `"******"` instead of using the supplied token | Every REST request is unauthenticated. `--mode rest` fails, as does `auto` when the optional SDK is unavailable | Medium | Send the token using Smartsheet's required bearer authorization format; add a mocked REST request test |
+| 16 | `scripts/validate.py:172` compares platform-native relative paths against POSIX allowlist suffixes | On Windows, the intentional historical references in `csl-operating-rules/SKILL.md` are not allowlisted, so the repository validator exits with four false-positive errors | Low | Normalize relative paths to POSIX form before matching, and test the validator on Windows and Linux |
+| 17 | `freeze_check.py:93,110` returns exit code 0 when `--pulls-dir` is missing or no snapshots are found | Automation can treat a check with no usable input as successful, despite there being no freeze result | Low | Return a nonzero configuration/input error code for these cases |
+| 18 | `.github/CODEOWNERS` still assigns every area to `[PLACEHOLDER]` teams | The CODEOWNER approvals required by `GOVERNANCE.md` cannot be reliably routed until IT replaces the placeholders with real teams | Medium (setup gate) | Assign valid GitHub teams before relying on CODEOWNERS for release approvals |
+
+### Verification
+
+- `C:/Users/Esteban/AppData/Local/Programs/Python/Python312/python.exe scripts/validate.py`: failed with four errors, all the Windows allowlist issue in finding 16; no warnings or Python compile errors were reported.
+- Direct `freeze_check.py` execution could not reach its CLI behavior because the configured Python environment does not have `pandas` installed (`ModuleNotFoundError`). Finding 17 is from code inspection, not a completed runtime test.
+- `claude plugin validate` was not run because the Claude CLI is not available in this environment.
+- GitHub visibility could not be confirmed: `gh repo view schrybacsl/csl-claude-plugins` could not resolve the repository. Treat the required private visibility as unverified, not as confirmed exposure.
